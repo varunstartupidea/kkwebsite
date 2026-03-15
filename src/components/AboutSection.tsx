@@ -29,7 +29,7 @@ export default function AboutSection() {
             transition={{ duration: 0.5 }}
           >
             <Image
-              src={`${basePath}/images/standing%20image.jpg`}
+              src="/kkwebsite/images/standing-image.jpg"
               alt={aboutData.name}
               fill
               className="object-cover object-top"
