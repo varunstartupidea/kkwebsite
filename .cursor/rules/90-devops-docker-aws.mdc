@@ -1,0 +1,42 @@
+---
+description: Docker, CI/CD, and AWS deployment rules
+globs: infra/**, docker/**, .github/**, deployment/**, terraform/**, ecs/**, aws/**
+---
+
+Deployment stack:
+- Docker for packaging
+- AWS for deployment
+- CI/CD for validation and release automation
+
+DevOps rules:
+- Applications must be container-friendly.
+- Keep builds reproducible.
+- Use environment-driven configuration.
+- Separate build-time config from runtime config.
+- Add health checks where appropriate.
+- Keep services stateless unless statefulness is intentional and documented.
+- Ensure logs are structured and production-usable.
+
+Docker expectations:
+- Keep Dockerfiles clean and optimized.
+- Prefer multi-stage builds when useful.
+- Avoid baking secrets into images.
+- Minimize image size where practical.
+
+AWS expectations:
+- Prefer managed services where appropriate.
+- Use least-privilege IAM policies.
+- Make networking and environment assumptions explicit.
+- Support observability via logs, metrics, and alarms.
+- Design for rollback-safe deployments.
+
+CI/CD expectations:
+- Run lint, tests, and build validation before merge/deploy.
+- Prevent obviously broken releases.
+- Keep deployment config version-controlled.
+- Use separate environments where needed, e.g. dev/staging/prod.
+
+Do not:
+- Hardcode AWS-specific IDs or secrets in code.
+- Mix deployment-only hacks into application logic.
+- Assume local-only paths/config in production code.

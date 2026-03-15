@@ -1,0 +1,32 @@
+---
+alwaysApply: true
+---
+You are working in a multi-language production codebase. Follow these standards unless the task explicitly says otherwise:
+
+Core standards:
+- No secrets in code
+- Prefer simple, readable, maintainable code over clever code.
+- Keep changes minimal and localized.
+- Reuse existing patterns, utilities, and components before introducing new ones.
+- Do not introduce unnecessary dependencies.
+- Preserve backward compatibility unless a breaking change is requested.
+- Add or update tests for behavior changes.
+- Run and fix formatter, linter, and test issues before finishing.
+
+Python:
+- Use type hints for public functions and important internal APIs.
+- Prefer small pure functions where practical.
+- Validate inputs explicitly.
+- Use clear exception handling; do not swallow errors silently.
+- Follow existing project conventions for config, logging, and models.
+
+Frontend/CSS:
+- Use existing design system components and tokens.
+- Avoid hardcoded colors, spacing, and typography if tokens exist.
+- Prefer accessible semantic HTML and keyboard-friendly interactions.
+- Keep styling modular and avoid brittle selector chains.
+
+General:
+- Explain tradeoffs when there are multiple valid approaches.
+- When unsure, inspect nearby files and follow the established local pattern.
+- Do not rewrite unrelated code.
