@@ -1,11 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/KK_website' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/KK_website/' : '',
-  images: {
-    unoptimized: true,
-  },
+  basePath: '/kkwebsite',
+  assetPrefix: '/kkwebsite/',
+  images: { unoptimized: true },
 };
-
 module.exports = nextConfig;
+```
+
+Then open **`.gitignore`** and make sure these lines are in it:
+```
+.next
+out
+node_modules
