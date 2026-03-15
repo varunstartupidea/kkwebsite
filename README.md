@@ -50,3 +50,4 @@ Output is in the `out/` directory.
 - `src/hooks/` — useScrollSpy for nav highlight
 - `src/lib/` — utils, Formspree contact client
 - `src/types/` — shared TypeScript types
+#testing
