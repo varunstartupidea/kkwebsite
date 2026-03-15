@@ -78,7 +78,7 @@ export default function ProjectsSection() {
           <div className="relative w-full shrink-0 overflow-hidden rounded-lg bg-[var(--color-bg)] md:w-56 md:min-w-[14rem]">
             <div className="relative aspect-[3/4] w-full min-h-[200px] md:min-h-[260px]">
               <Image
-                src={`${basePath}/images/sitting.png`}
+                src="/kkwebsite/images/sitting.png"
                 alt="Experience"
                 fill
                 className="object-cover object-top"

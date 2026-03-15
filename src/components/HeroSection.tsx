@@ -12,7 +12,7 @@ export default function HeroSection() {
     <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[var(--color-dark)]">
       <div className="absolute inset-0 z-0">
         <Image
-          src={`${basePath}/images/cable-bridge-1.jpg`}
+          src="/kkwebsite/images/cable-bridge-1.jpg"
           alt=""
           fill
           className="object-cover"
